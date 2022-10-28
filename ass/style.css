@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+/* @import url('https://fonts.googleapis.com/css?family=Gamja+Flower'); */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 html, body {
 	width: 100%;
 	height: 100%;
-	font-family: 'Gamja Flower';
-	font-size: 28px;
-	color: #222;
+	/* font-family: 'Gamja Flower'; */
+	font-size: 25px;
+	color: rgb(65, 65, 65);
+}
+.display {
+	margin: 20px;
+	font-size: 18px;
 }
 
 .navbar {
-	background-color: rgba(82,64,120,0.9) !important;
+	background-color: rgb(63 141 134 / 90%) !important;
 }
 .navbar li a {
     color: white !important;
@@ -17,8 +23,24 @@ html, body {
 .navbar li a:hover {
     color: black !important;
 }
+
+.carousel.slide {
+	margin: 20px 0 20px;
+}
 .carousel-inner img {
 	width: 100%;
+}
+.carousel-item {
+	width: 100%;
+	text-align: center;
+}
+.carousel-item img {
+  width: 80%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+
 }
 .carousel-caption {
 	position: absolute;
@@ -44,6 +66,29 @@ html, body {
 .jumbotron {
 	padding: 1rem;
 	border-radius: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.jumbotron p {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.btn-buy:hover {
+  background-color: #63aeb4;
+}
+.text-block {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px;
+}
+.text-title {
+	margin: 20px;
+	color:rgb(24, 84, 107);
 }
 .welcome hr {
 	border-top: 2px solid rgba(62,44,100, 0.6);
@@ -67,8 +112,11 @@ html, body {
 	width: 100%;
 }
 .social a {
-	font-size: 3em;/*1em = 16px*/
+	font-size: 2em;/*1em = 16px*/
 	padding: 3rem;/*1rem = 1 "font-size" */
+}
+.mg-20 {
+	margin: 20px;
 }
 .fa-facebook {
 	color: #3b5998;
